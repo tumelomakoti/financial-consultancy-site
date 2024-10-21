@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Financial Consultancy Services for Small and Medium Businesses in South Africa.">
+    <title>RT Dynamic Business Consulting</title>
+    
+    <!-- Inline CSS -->
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        header {
+            background: #2C3E50; /* Dark modern color */
+            color: white;
+            padding: 20px 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .logo {
+            float: left;
+            width: 150px;
+        }
+
+        .hero {
+            background: #34495E;
+            color: white;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #E74C3C;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #C0392B;
+        }
+
+        /* Section Styles */
+        .services, .about, .contact {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .services h2, .about h2, .contact h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .service-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .service-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .service-item:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .divider {
+            height: 10px;
+            background-color: #E74C3C;
+            margin: 60px 0;
+        }
+
+        footer {
+            background: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .section-img {
+            width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-grid {
+                flex-direction: column;
+            }
+
+            .logo {
+                width: 100px;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header nav ul li {
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="rtdbc-logo.jpg" alt="RT Dynamic Business Consulting Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Your Trusted Financial Advisors for Small and Medium Businesses</h1>
+            <p>We offer expert financial consulting tailored to help South African businesses thrive in a competitive environment.</p>
+            <a href="#services" class="cta-button">Discover Our Services</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Investment Planning</h3>
+                    <img src="investment.jpg" alt="Investment Planning">
+                    <p>Helping small and medium businesses grow through effective investment strategies. We provide tailored portfolio management, risk analysis, and strategic guidance to ensure sustainable growth.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Retirement Solutions</h3>
+                    <img src="retirement.jpg" alt="Retirement Planning">
+                    <p>We offer comprehensive retirement solutions, including pension fund management and savings plans, ensuring that your business and employees are financially secure for the future.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Tax Optimization</h3>
+                    <img src="tax.jpg" alt="Tax Optimization">
+                    <p>Our expert tax advisors help businesses minimize their tax liability through legal tax planning and optimization strategies, maximizing business profitability.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Financial Strategy & Advisory</h3>
+                    <img src="strategy.jpg" alt="Financial Strategy">
+                    <p>We provide strategic financial advice, helping businesses develop sound financial plans, cash flow management solutions, and growth strategies for long-term success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <img src="about-us.jpg" alt="About Us" class="section-img">
+            <p>We are a leading financial consultancy firm in South Africa, specializing in services for small and medium-sized businesses. With decades of experience, our team is committed to helping local businesses achieve financial stability and growth through expert financial advice and personalized solutions.</p>
+        </div>
+    </section>
+
+    <!-- Divider -->
+    <div class="divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us to learn more about how we can help your business achieve its financial goals.</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> info@consultancy.co.za</p>
+                <p><strong>Phone:</strong> +27 123 456 789</p>
+                <p><strong>Address:</strong> 123 Finance St, Johannesburg, South Africa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RT Dynamic Business Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
